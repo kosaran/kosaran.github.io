@@ -27,7 +27,7 @@ export default function ImageUploader() {
   const [error, setError] = useState<string>('')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const onDrop = useCallback((acceptedFiles: File[], fileRejections: FileRejection[], event: DropEvent) => {
+  const onDrop = useCallback((acceptedFiles: File[]) => {
     const file = acceptedFiles[0]
     if (file && file.type.startsWith('image/')) {
       const reader = new FileReader()
