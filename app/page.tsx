@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useCallback } from 'react'
-import { useDropzone, FileRejection, DropEvent } from 'react-dropzone'
+import { useDropzone} from 'react-dropzone'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ImageIcon, LogOut, Menu, X, Home, Activity, Settings } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
